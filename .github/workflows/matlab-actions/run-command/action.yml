@@ -1,0 +1,13 @@
+# Copyright 2020 The MathWorks, Inc.
+
+name: Run MATLAB Command
+description: >-
+  Run MATLAB scripts, functions, and statements
+inputs:
+  command:
+    description: >-
+      Script, function, or statement to execute
+    required: true
+runs:
+  using: node12, 14, and 16
+  main: dist/index.js
